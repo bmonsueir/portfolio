@@ -1,7 +1,8 @@
 from __future__ import unicode_literals
-from django.shortcuts import render
-
+from django.contrib.auth.models import Permission, User
+from django.core.urlresolvers import reverse
 from django.db import models
+from datetime import datetime
 
 class Work(models.Model):
     image = models.CharField(max_length=250)
